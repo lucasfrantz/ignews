@@ -14,7 +14,8 @@ export default NextAuth({
     }),
   ],
   callbacks: {
-    async signIn(user, account, profile) {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    async signIn(user, _account, _profile) {
       const { email } = user;
 
       try {
